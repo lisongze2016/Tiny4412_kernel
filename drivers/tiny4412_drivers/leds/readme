@@ -1,0 +1,21 @@
+﻿led_4412.c 是基于led子系统需要配置以下宏
+
+make menuconfig
+
+CONFIG_LEDS_CLASS
+CONFIG_LEDS_TRIGGERS
+CONFIG_LEDS_TRIGGER_TIMER
+
+-> Device Drivers
+  -> LED Support
+   [*]   LED Class Support    
+   [*]   LED Trigger support
+   <*>   LED Timer Trigger
+
+
+echo 1 > sys/class/led1/brightness	亮灯	
+echo 0 > sys/class/led1/brightness	灭灯
+
+echo timer > sys/class/led2/trigger	设置时间触发
+echo 500 > sys/class/led2/delay_on	亮500ms
+echo 300 > sys/class/led2/delay_off	灭300ms

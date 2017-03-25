@@ -1,0 +1,11 @@
+menuconfig TINY4412_DRV
+	bool "tiny4412 board drivers"
+	---help---
+	tiny4412 board drivers about leds keys...
+
+if TINY4412_DRV
+
+
+source "drivers/tiny4412_drivers/leds/Kconfig"
+
+endif

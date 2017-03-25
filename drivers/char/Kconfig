@@ -28,13 +28,13 @@ config DEVKMEM
 	  kind of kernel debugging operations.
 	  When in doubt, say "N".
 
-config TINY4412_LEDS
-	tristate "LED Support for FriendlyARM Tiny4412 GPIO LEDs"
-	depends on MACH_TINY4412
-	default y
-	help
-	  This option enables support for LEDs connected to GPIO lines
-	  on Tiny4412 boards.
+#config TINY4412_LEDS
+#	tristate "LED Support for FriendlyARM Tiny4412 GPIO LEDs"
+#	depends on MACH_TINY4412
+#	default y
+#	help
+#	  This option enables support for LEDs connected to GPIO lines
+#	  on Tiny4412 boards.
 
 config TINY4412_HELLO_MODULE
 	tristate "Tiny4412 module sample"

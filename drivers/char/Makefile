@@ -68,7 +68,7 @@ js-rtc-y = rtc.o
 obj-$(CONFIG_S3C_MEM)		+= s3c_mem.o
 obj-$(CONFIG_EXYNOS_MEM)	+= exynos_mem.o
 
-obj-$(CONFIG_TINY4412_LEDS)	+= tiny4412_leds.o
+#obj-$(CONFIG_TINY4412_LEDS)	+= tiny4412_leds.o
 obj-$(CONFIG_TINY4412_HELLO_MODULE)	+= tiny4412_hello_module.o
 obj-$(CONFIG_TINY4412_BUTTONS)	+= tiny4412_buttons.o
 obj-$(CONFIG_TINY4412_BUZZER)	+= tiny4412_pwm.o

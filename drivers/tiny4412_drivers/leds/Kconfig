@@ -1,0 +1,6 @@
+
+config TINY4412_LEDS 
+	tristate "leds driver"
+	---help---
+	 you know 
+
