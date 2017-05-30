@@ -19,3 +19,7 @@ echo 0 > sys/class/led1/brightness	灭灯
 echo timer > sys/class/led2/trigger	设置时间触发
 echo 500 > sys/class/led2/delay_on	亮500ms
 echo 300 > sys/class/led2/delay_off	灭300ms
+
+
+led_char/
+字符设备驱动控制led设备
