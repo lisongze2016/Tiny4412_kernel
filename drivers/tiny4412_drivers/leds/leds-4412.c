@@ -23,7 +23,7 @@ struct led_desc {
 	char *name;
 };
 
-struct led_desc led_gpios[2];
+struct led_desc led_gpios[4];
 
 struct led_classdev_4412 {
 	struct led_classdev cdev;
@@ -118,6 +118,10 @@ static int tiny4412_gpio_led_probe(struct platform_device *pdev)
 	led_gpios[0].name = "led1";
 	led_gpios[1].gpio = gpio_res->start + 1;
 	led_gpios[1].name = "led2";
+	led_gpios[2].gpio = gpio_res->start + 2;
+	led_gpios[2].name = "led3";
+	led_gpios[3].gpio = gpio_res->start + 3;
+	led_gpios[3].name = "led4";
 
 	leds_init();
 

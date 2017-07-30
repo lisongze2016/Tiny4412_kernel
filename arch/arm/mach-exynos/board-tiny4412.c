@@ -3128,7 +3128,7 @@ static struct platform_device *smdk4412_devices[] __initdata = {
 static struct resource tiny4412_resource_leds[] = {
 	[0] = {
 		.start = EXYNOS4212_GPM4(0),
-		.end = EXYNOS4212_GPM4(0) + 1,
+		.end = EXYNOS4212_GPM4(0) + 3,
 		.flags = IORESOURCE_MEM,
 	},
 	
